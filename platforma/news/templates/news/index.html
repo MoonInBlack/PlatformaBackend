@@ -1,10 +1,36 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>{{ title}}</title>
-</head>
-<body>
-<h1>start</h1>
-</body>
-</html>
+{% extends 'news/base.html' %}
+
+{% block content %}
+
+
+<header class="top-line">
+
+	<a href="/" class="logo logo-litera">ПЛАТФОРМА</a>
+
+	<div class="search-wrap">
+		<div class="search" title="Поиск по сайту..."><div class="fa fa-search"></div></div>
+		<div class="search-field">
+			<form action="/search.html" id="cse-search-box">
+				<input type="hidden" name="cx" value="partner-pub-01b50b6fe29f6d024" />
+				<input type="hidden" name="cof" value="FORID:10" />
+				<input type="hidden" name="ie" value="UTF-8" />
+				<input type="text" name="q" placeholder="Поиск по сайту..." />
+
+			</form>
+		</div>
+	</div>
+
+	<div class="mobile-menu-button"><i class="fa fa-bars"></i>Меню</div>
+	<nav class="main-menu top-menu">
+<ul>
+	<li><a href="blog/events/">Мероприятия</a></li>
+	<li><a href="blog/it-dou/">Образование</a></li>
+	<li><a href="blog/reviews/">Обзоры</a></li>
+	<li><a href="blog/projects/">Проекты</a></li>
+	<li><a href="blog/prethent/">Презентации</a></li>
+	<li><a href="about.html">О сайте</a></li>
+</ul>
+	</nav>
+</header>
+
+{% endblock %}
