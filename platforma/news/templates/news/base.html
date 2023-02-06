@@ -69,8 +69,68 @@
     </nav>
     {% endblock mainmenu %}
 
-    {% block content %}
-    {% endblock %}
+
+    <section class="first-section clearfix">
+
+        <div class="container-fluid">
+
+            <div class="ad top-ad">
+
+                <div class="row no-gutters">
+
+
+                    <div class="col-md-6">
+
+                        <div class="pattern">
+
+
+                            <div class="overlay item-title"
+                                 style="background-image: url(images/events/2023/2023-01-14-festival-konkurs/1t.jpg)">
+                                {% block content %}
+                                {% endblock %}
+                                <div class="item-title-content">
+
+                                    <div class="item-social">
+
+
+                                        <div class="item-comments" title="Количество комментариев">
+
+
+                                            <i class="fa fa-comments"></i><a
+                                                href="/blog/events/2023-01-14-festival-konkurs.html#disqus_thread"
+                                                class="item-comments-count"></a>
+
+                                        </div>
+
+                                        <div class="fa fa-share-alt" title="Поделиться в соц. сетях"></div>
+
+                                        <div class="likely likely-custom"
+                                             data-url="http://platforma44.ru/blog/events/2023-01-14-festival-konkurs.html"
+                                             data-media="http://platforma44.ru/images/events/2023/2023-01-14-festival-konkurs/1.jpg"
+                                             data-title="Всероссийский фестиваль - конкурс «ТЕАТРАЛЬНАЯ ЭТНО - ВЕСНА»">
+                                            <div class="vkontakte" title="Поделиться Вконтакте">Вконтакте</div>
+
+                                            <div class="facebook" title="Поделиться в Facebook">Facebook</div>
+
+                                            <div class="twitter" title="Поделиться в Twitter">Twitter</div>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
 
     {% block footer %}
     {% endblock footer %}
@@ -123,6 +183,7 @@
     <script type="text/javascript" src="https://vk.com/js/api/openapi.js?168"></script>
     <script type="text/javascript">
 	VK.Widgets.Group("vk_groups", {mode: 0, width: 'auto', height: '300', color2: '202222', color3: '202222'}, -496537474);
+
 
 
     </script>
