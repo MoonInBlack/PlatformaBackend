@@ -73,57 +73,12 @@
     {% endblock %}
 
 
-</header>
-
-<footer class="main-footer">
-		<div class="contaiter">
-
-			<nav class="main-menu footer-menu">
-	<ul>
-	{% block footer %}
-
-
-		{% for m in menu %}
-
-		{% if not forloop.last %}
-
-		<li><a href="#">{{m.title}}</a></li>
-
-		{% else %}
-
-		<li class="last"><a href="#">{{m.title}}</a></li>
-
-		{% endif %}
-
-		{% endfor %}
-</ul>
-			</nav>
-		{% endblock %}
-
-			<nav class="soc">
-				<ul>
-	<li><a href="#"><i class="fa fa-vk"></i></a></li> <li><a href="#"><i class="fa fa-facebook"></i></a></li> <li><a href="#"><i class="fa fa-odnoklassniki"></i></a></li> <li><a href="#"><i class="fa fa-instagram"></i></a></li> <li><a href="rss.xml"><i class="fa fa-rss"></i></a></li>
-				</ul>
-			</nav>
-
-		</div>
-	</footer>
-	<footer class="bottom-footer">
-		<div class="container text-center">
-			<div class="footer-copy">2023 © <span class="logo-footer logo-litera">Платформа</span></div>
-			<p>Копирование контента и размещение на других сайтах запрещено.</p>
-		</div>
-	</footer>
-
-	<script src="js/scripts.min.js"></script>
-
-	<script id="dsq-count-scr" src="//platforma44-ru-3.disqus.com/count.js" async></script>
-
-	<!-- <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script> -->
-
-	<script type="text/javascript" src="https://vk.com/js/api/openapi.js?168"></script>
-	<script type="text/javascript">
-	VK.Widgets.Group("vk_groups", {mode: 0, width: 'auto', height: '300', color2: '202222', color3: '202222'}, -496537474);
+    <script src="js/scripts.min.js"></script>
+       <script id="dsq-count-scr" src="//platforma44-ru-3.disqus.com/count.js" async></script>
+               <script type="text/javascript" src="https://vk.com/js/api/openapi.js?168"></script>
+	      <script type="text/javascript">
+	   VK.Widgets.Group("vk_groups", {mode: 0, width: 'auto', height: '300', color2: '202222', color3: '202222'},
+	 -496537474);
 	</script>
 
 </body>
