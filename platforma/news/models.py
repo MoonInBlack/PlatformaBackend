@@ -15,4 +15,7 @@ class Post(models.Model):
     time_update = models.DateTimeField(auto_now=True)
     is_published = models.BooleanField(default=True)
 
+    def __str__(self):
+        """Вывод заголовка текущей записи"""
+        return self.title
 
