@@ -13,4 +13,3 @@ class Items(models.Model):
     def __str__(self):
         """Вывод заголовка текущей записи"""
         return self.title
-

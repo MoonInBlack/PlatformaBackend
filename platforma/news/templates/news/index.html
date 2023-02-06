@@ -1,13 +1,15 @@
 {% extends 'news/base.html' %}
 
 {% block content %}
-
+<ul>
     {% for p in posts %}
-<li>
-	<h1>{{p.title}}</h1>
-	<p>{{p.content}}</p>
-</li>
+    <li>
+        <h1>{{p.title}}</h1>
+        <p>{{p.content}}</p>
+    </li>
     {% endfor %}
 </ul>
+{% endblock %}
 
+{% block footer %}
 {% endblock %}
