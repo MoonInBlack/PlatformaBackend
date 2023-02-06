@@ -1,8 +1,6 @@
 {% extends 'news/base.html' %}
 
 {% block content %}
-
-
 <header class="top-line">
 
 	<a href="/" class="logo logo-litera">ПЛАТФОРМА</a>
@@ -32,5 +30,16 @@
 </ul>
 	</nav>
 </header>
+
+
+
+<ul>
+    {% for p in posts %}
+<li>
+	<h1>{{p.title}}</h1>
+	<p>{{p.content}}</p>
+</li>
+    {% endfor %}
+</ul>
 
 {% endblock %}
